@@ -1,0 +1,28 @@
+{
+  "id": "solo_run_modpack",
+  "name": "Solo Run Modpack",
+  "version": "0.9.3",
+  "entry": "main.lua",
+  "api": 2,
+  "profile": "content",
+  "category": "Solo Run",
+  "priority": 900,
+  "affects_link": false,
+  "permissions": [
+    "engine_internals"
+  ],
+  "dependencies": [],
+  "optional_dependencies": [],
+  "conflicts": [
+    "quality_of_life",
+    "jj_auto_field_moves",
+    "red_starter_change",
+    "speedrun_encounter_tweaks",
+    "badge_boost_glitch",
+    "remove_poison_visual",
+    "rock_tunnel_flash_removal",
+    "surge_trash_puzzle",
+    "instant_text_speed"
+  ],
+  "description": "Every solo run rule in one mod. Change your starter, run field moves without HM users, lock items out of battle, restore the badge boost glitch, and skip the busywork. All of it toggleable from MOD OPTIONS."
+}
