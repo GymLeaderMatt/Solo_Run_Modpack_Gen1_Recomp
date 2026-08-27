@@ -50,6 +50,7 @@ return function(mod)
     "sr_field_moves.lua",
     "sr_encounters.lua",
     "sr_battle_rules.lua",
+    "sr_brock_skip.lua",
     "sr_text_speed.lua",
     "sr_world_tweaks.lua",
   }

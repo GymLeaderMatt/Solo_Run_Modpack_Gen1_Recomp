@@ -52,6 +52,7 @@ options.KEYS = {
   BALLS_WORK      = "balls_work",
   AUTO_FIELD      = "auto_field",
   SELECT_MENU     = "select_menu",
+  BROCK_SKIP      = "brock_skip",
   NO_ITEMS        = "no_battle_items",
   BADGE_BOOST     = "badge_boost",
   NO_EARLY_WILDS  = "no_early_wilds",
@@ -117,6 +118,10 @@ local function buildRows(mod)
       default = true },
     { key = K.SELECT_MENU, label = "SELECT FIELD MENU", type = "toggle",
       default = true },
+
+    -- ---- route skips ----
+    { key = K.BROCK_SKIP, label = "BROCK SKIP", type = "toggle",
+      default = false },
 
     -- ---- battle ----
     { key = K.NO_ITEMS, label = "NO BATTLE ITEMS", type = "toggle",
