@@ -1,7 +1,7 @@
 {
   "id": "solo_run_modpack",
   "name": "Solo Run Modpack",
-  "version": "0.9.3",
+  "version": "2.0.1",
   "entry": "main.lua",
   "api": 2,
   "profile": "content",
