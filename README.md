@@ -19,6 +19,7 @@ runs are at the top.
 | **BALLS ALWAYS WORK** | ON | *Only shown when NEED HM USERS is ON.* A regular Pokéball catches on the first throw. |
 | **AUTO FIELD MOVES** | ON | Walk into water to surf, into a tree to cut it, into a boulder for Strength. No menu, no textbox, no manual input at all. Also lights a dark cave on entry if it is still dark. |
 | **SELECT FIELD MENU** | ON | SELECT opens a small menu with the things that have no obvious trigger. Always in the same order: **BICYCLE, FLY, DIG, TELEPORT** — entries appear as you unlock them but never reorder. The bike shows once it's in your bag, and reads BIKE OFF while you're riding. |
+| **BROCK SKIP** | ON | Removes the NPC that stops you from leaving Pewter and takes you to Brock's gym. Opens up strategies for lower tier Pokemon with bad Brock splits. |
 | **NO BATTLE ITEMS** | ON | The in-battle bag is filtered to Pokéballs only. You can still catch the HM users; you cannot use a Potion or an X Attack. |
 | **BADGE BOOST** | ON | Restores the Gen 1 badge boost glitch. |
 | **NO EARLY WILDS** | ON | No wild encounters before repels are affordable: Routes 1, 22, 3 and 6, Viridian Forest, Mt. Moon B1F and B2F. |
