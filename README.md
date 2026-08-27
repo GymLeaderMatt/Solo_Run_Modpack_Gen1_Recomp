@@ -1,32 +1,86 @@
-# What is this?
-- This is a modpack that contains what I consider the essentials for a true solo running experience.
-- Most things have toggles, you can mix and match, and tailor it to what you want.
+# Solo Run Modpack
 
-# Mod Options (in-game):
-- Replace Ball: The ball your starter will replace from the 3 in Oak's Lab.
-- New Starter: Pick between any Pokemon to have as your starter.
-- Perfect DVs: Gives your starter perfect DVs when you select them.
-- Need HM Users: Turning this off removes the need for HM Pokemon. I'll talk more about it below.
-- HM Mon Spawns: If the above option is on, this will guarantee a Paras spawn in Mt. Moon and a Doduo encounter on Route 16 (next to Celadon/before you get Fly)
-- Balls Always Work: If Need HM Users is on, this guarantees the Pokeball capture.
-- Auto Field Moves: Automatically uses things like cut, strength, and surf without the need for user input or menuing.
-- Select Field Menu: Allows you to hit select and open up a new menu. Depending on what you've unlocked and your badges, you can use the Bike, Fly, Dig, or Teleport from this menu.
-- No Battle Items: Stops you from using items in battle entirely. The flavor forces you to use the standard 'no items in battle rule' in most solo run rulesets.
-- Badge Boost: Enables the badge boost glitch. A pivotal gen 1 mechanic noticeably absent in the Gen 1 recomp.
-- No Early Wilds: Disables wild encounters until you can buy repels.
-- Instant Text: More or less just a quality of life that speeds up the text in the game. A must have for me.
-- No Sound Waits: It removes the game's need to wait for sounds to finish. It noticeably slows the game down. For example, you level up in battle, it HAS to complete the jingle, or an opponent puts out a Pokemon and it HAS to do the cry first before proceeding.
-- No Poison Flash: The overworld indicator for poison is an eyesore and this removes it.
-- Light Rock Tunnel: Removes the darkness from Rock Tunnel. You can already do it in the dark so why not let yourself actually see the game?
-- Auto Trash Puzzle: Automatically solves the puzzle in Lt. Surge's gym.
+Every rule a solo run needs, in one mod. Install it and it is already set up
+correctly — the defaults *are* the ruleset. Everything below is a toggle in
+**MOD OPTIONS** if you want something different.
 
-# Elaboration on 'Need HM Users'
-- This is a big thing to make it a true solo run experience. The way this works in terms of coding is that it checks if you have the HM and the required badge, and automatically unlocks it for you to use outside of battle.
-- This means if you have beaten Erika and have strength from the Warden, you can just push around boulders now. You don't need to catch another Pokemon to do that.
-- The main HMs are self explanatory. You need HM02 and Surge's badge to use fly, as an example.
-- The select menu (just hit select) will populate with a few moves depending on if they are unlocked.
-- If you've beat the Dig Rocket Grunt in Cerulean and (I believe) Lt. Surge's badge, pressing select will let you dig outside of battle.
-- Teleport has no badge requirement. You just need a Pokemon with it.
-- The bike is included in this menu just to make things a little cleaner.
+Only four option rows fit on screen at once, so the rows you change between
+runs are at the top.
 
-This along with the quality of life modpack give you the same vanilla feel but it is just more polished and wastes less of your time. If you've never tried no HM users or the running shoes for a solo run, don't deprive yourself by playing like a caveman stuck in the purist mindset of 1996.
+## The options, in the order they appear
+
+| Row | Default | What it does |
+|---|---|---|
+| **REPLACE BALL** | CHARMANDER | Which of Oak's three Pokéballs gets swapped out. |
+| **NEW STARTER** | *first alphabetically* | What you get instead. Lists every species in the game, including any added by other mods. The pick itself is swapped too: the Pokédex page Oak shows you, its cry, and the lines either side of it all name what you are actually getting. |
+| **PERFECT DVS** | ON | Your starter gets 15 in every stat. **Nothing else is affected** — wild Pokémon roll normally, and trainers were always on the fixed 9/8/8/8/8 spread. |
+| **NEED HM USERS** | OFF | ON is vanilla: a party member has to actually know the move. OFF replaces that with **badge + machine obtained** (see below). |
+| **HM MON SPAWNS** | ON | *Only shown when NEED HM USERS is ON.* Guarantees the Paras in Mt. Moon and the Doduo on Route 16, then silences that map once you have it. |
+| **BALLS ALWAYS WORK** | ON | *Only shown when NEED HM USERS is ON.* A regular Pokéball catches on the first throw. |
+| **AUTO FIELD MOVES** | ON | Walk into water to surf, into a tree to cut it, into a boulder for Strength. No menu, no textbox. Also lights a dark cave on entry if it is still dark. |
+| **SELECT FIELD MENU** | ON | SELECT opens a small menu with the things that have no walk-into trigger. Always in the same order: **BICYCLE, FLY, DIG, TELEPORT** — entries appear as you unlock them but never reorder. The bike shows once it's in your bag, and reads BIKE OFF while you're riding. |
+| **NO BATTLE ITEMS** | ON | The in-battle bag is filtered to Pokéballs only. You can still catch the HM users; you cannot use a Potion or an X Attack. |
+| **BADGE BOOST** | ON | Restores the Gen 1 badge boost glitch. |
+| **NO EARLY WILDS** | ON | No wild encounters before repels are affordable: Routes 1, 22, 3 and 6, Viridian Forest, Mt. Moon B1F and B2F. |
+| **INSTANT TEXT** | ON | All text prints at once, **including in battle**. |
+| **NO SOUND WAITS** | ON | Removes the pauses where the game stands still waiting for a jingle or a cry to finish — receiving an item, levelling up, learning a move, a Pokémon being sent out. The sound still plays, the game just stops waiting for it. |
+| **NO POISON FLASH** | ON | Poison still hurts in the overworld, it just stops blinking the screen and making the noise. |
+| **LIGHT ROCK TUNNEL** | ON | Removes the darkness from Rock Tunnel. |
+| **AUTO TRASH PUZZLE** | ON | Lt. Surge's trash cans are already unlocked. |
+
+The engine adds its own **RESET DEFAULTS** row at the bottom.
+
+## The HM rule, in detail
+
+With **NEED HM USERS** off, a field move works when you hold the badge *and*
+you have obtained the machine that teaches it. Nothing needs to know the move.
+
+| Move | Badge | Machine |
+|---|---|---|
+| CUT | Cascade | HM01 |
+| FLY | Thunder | HM02 |
+| SURF | Soul | HM03 |
+| STRENGTH | Rainbow | HM04 |
+| FLASH | Boulder | HM05 |
+| DIG | Cascade | TM28 |
+
+Three things worth knowing:
+
+- **Obtained, not held.** HMs are never consumed, but TM28 is, and Dig is
+  worth teaching. Once a machine has been in your bag it counts for the rest
+  of the run. Saves that already spent TM28 are covered too — beating the
+  Cerulean thief is enough on its own.
+- **Dig is gated on Misty** rather than Surge, because the thief is beaten on
+  the way out of Cerulean and Surge is occasionally skipped.
+- **Teleport is not part of this.** There is no Teleport machine to own, so it
+  works the normal way: your Pokémon has to know it. The SELECT menu is just a
+  shortcut past the party menu.
+
+This changes the route. You no longer need to *teach* anything, so Cut works
+the moment you beat Misty, before the S.S. Anne.
+
+## Notes
+
+- **Oak's question is reworded on the ball you replace.** The original line
+  has the type built into the sentence — "the fire POKéMON, CHARMANDER" —
+  which is wrong for most replacements and has nowhere to put a new name. On
+  the replaced ball it becomes "So! You want to pick *name*?" The other two
+  balls keep their original wording.
+- Turning **NEED HM USERS** off also silences Mt. Moon and Route 16, since
+  there is nothing left to catch there.
+- **LIGHT ROCK TUNNEL** and the automatic Flash do the same job by different
+  means. With the tunnel lit, Flash has nothing to light.
+- **NO SOUND WAITS** is worth turning off if you play with sound on: cries
+  and jingles will overlap the text that follows them.
+- The HM rows disappear the moment you flip NEED HM USERS off, even while
+  you're looking at the options screen, on every engine version.
+- Options are stored per mod, so settings from the standalone versions of
+  these mods do not carry over. The defaults are the same ruleset.
+
+## Replaces
+
+This pack contains the same features as, and should not be run alongside,
+the standalone Starter Change, Encounter Tweaks, Badge Boost Glitch, Remove
+Poison Visual, Rock Tunnel Flash, Trash Can Puzzle Solve and Instant Text
+mods. The overworld field-move layer covers the same ground as Quality of
+Life's easy interactions and Auto Field Moves.
